@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="625.0" prefWidth="1325.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.ConsulterRCont">
+   <children>
+      <AnchorPane fx:id="N1" layoutX="10.0" layoutY="10.0" prefHeight="615.0" prefWidth="1306.0">
+         <children>
+            <Rectangle id="btn" arcHeight="5.0" arcWidth="5.0" fill="#3f5e6d" height="607.0" layoutX="9.0" layoutY="8.0" stroke="#2f3459" strokeType="INSIDE" width="1501.0" />
+            <TableView fx:id="T1" layoutX="34.0" layoutY="154.0" prefHeight="429.0" prefWidth="722.0">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="54.39999008178711" resizable="false" text="id" />
+                  <TableColumn fx:id="Objectif" minWidth="-1.0" prefWidth="105.60000610351562" resizable="false" text="Objectif" />
+                  <TableColumn fx:id="Dejeuner" prefWidth="103.20005798339844" resizable="false" text="Dejeuner" />
+                  <TableColumn fx:id="Midi" prefWidth="101.5999755859375" resizable="false" text="Midi" />
+                  <TableColumn fx:id="Dinner" prefWidth="89.5999755859375" resizable="false" text="Dinner" />
+                  <TableColumn fx:id="CaloriesConsommés" prefWidth="149.60003662109375" resizable="false" text="CaloriesConsommés" />
+                  <TableColumn fx:id="Date" prefWidth="116.7999267578125" resizable="false" text="Date" />
+               </columns>
+            </TableView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cda77a" height="48.0" layoutX="10.0" layoutY="55.0" stroke="#3d291d" strokeType="INSIDE" width="1485.0" />
+            <Text fill="#2f3459" layoutX="46.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Routines" wrappingWidth="229.7464599609375">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Button fx:id="Supprimer" layoutX="811.0" layoutY="179.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="33.0" prefWidth="101.0" text="Supprimer" />
+            <Button fx:id="Modif" layoutX="811.0" layoutY="241.0" mnemonicParsing="false" onAction="#Modifiy" prefHeight="33.0" prefWidth="101.0" text="Modifier" />
+            <Button fx:id="Ajout" layoutX="811.0" layoutY="310.0" mnemonicParsing="false" onAction="#Add" prefHeight="33.0" prefWidth="101.0" text="Ajouter" />
+            <Button fx:id="Back" layoutX="811.0" layoutY="369.0" mnemonicParsing="false" onAction="#Back" prefHeight="33.0" prefWidth="101.0" text="Back" />
+            <TextField fx:id="search" layoutX="192.0" layoutY="118.0" onAction="#recherchefiltre" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

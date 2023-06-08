@@ -1,0 +1,32 @@
+.card {
+-fx-background-color: #fff;
+-fx-background-radius: 5px;
+}
+.shadow {
+-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);
+}
+.btn {
+
+-fx-background-color: linear-gradient(to bottom right, #1E90FF, #2f3459);
+-fx-cursor: hand;
+-fx-text-fill: #fff;
+}
+.btn:hover {
+-fx-background-color: linear-gradient(to bottom right, #00BFFF, #1E90FF);
+}
+.name {
+    -fx-font-weight: bold;
+    -fx-text-fill:#2f3459;
+}
+button{
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+#details_btn {
+    -fx-margin-left: 10px;
+}
+.date {
+     -fx-font-weight: bold;
+    -fx-text-fill:#2f3459;
+}
+

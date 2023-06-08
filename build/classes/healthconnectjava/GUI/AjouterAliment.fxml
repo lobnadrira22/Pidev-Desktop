@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="472.0" prefWidth="417.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.AjouterALCont">
+   <children>
+      <Pane fx:id="pane" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="466.0">
+         <children>
+            <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#cda77a" height="465.0" layoutX="53.0" layoutY="39.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="336.0" />
+            <Button fx:id="Button" layoutX="170.0" layoutY="53.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="33.0" prefWidth="89.0" text="Ajouter" />
+            <Label layoutX="63.0" layoutY="86.0" prefHeight="27.0" prefWidth="213.0" text="Ajout Aliment" textFill="#3f5e6d">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="127.0" prefHeight="47.0" prefWidth="270.0" text=" . . . . . . . . . . . . . . . . .  . . " textFill="#3f5e6d">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Nom" layoutX="221.0" layoutY="202.0" prefHeight="25.0" prefWidth="81.0" />
+            <TextArea fx:id="description" layoutX="63.0" layoutY="341.0" prefHeight="70.0" prefWidth="270.0" />
+            <Label layoutX="60.0" layoutY="206.0" text="Nom:" textFill="#3f5e6d" />
+            <Label layoutX="60.0" layoutY="307.0" text="Description cloture:" textFill="#3f5e6d" />
+            <Label fx:id="pointErreur" layoutX="239.0" layoutY="341.0" textFill="#ff0707" />
+            <Label fx:id="descriptionErreur" layoutX="56.0" layoutY="486.0" textFill="#ec0000" />
+            <Label fx:id="s" layoutX="60.0" layoutY="250.0" prefHeight="17.0" prefWidth="103.0" text="Nombre Calories:" textFill="#3f5e6d" />
+            <TextField fx:id="NbC" layoutX="221.0" layoutY="246.0" prefHeight="25.0" prefWidth="81.0" />
+            <Button fx:id="Back" layoutX="277.0" layoutY="53.0" mnemonicParsing="false" onAction="#Back" prefHeight="33.0" prefWidth="101.0" text="Back" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

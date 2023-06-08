@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="intAjout" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.EvenementFXMLController">
+   <children>
+      <Label layoutX="18.0" layoutY="94.0" prefHeight="456.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="18.0" layoutY="555.0" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="18.0" layoutY="16.0" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <ImageView fitHeight="121.0" fitWidth="122.0" layoutX="67.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/logo-dark.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="248.0" layoutY="94.0" prefHeight="456.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="248.0" layoutY="16.0" prefHeight="70.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="248.0" layoutY="555.0" prefHeight="50.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="578.0" layoutY="567.0" text="Copyrights ©2023 Esprit. All rights reserved." textFill="WHITE">
+         <font>
+            <Font name="Andalus" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nomtf" layoutX="630.0" layoutY="130.0" prefHeight="26.0" prefWidth="312.0" promptText="Nom de l'évenement" style="-fx-background-color: #FFF;" styleClass="textfield-design" stylesheets="@style.css" />
+      <Label layoutX="446.0" layoutY="132.0" text="Nom" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="446.0" layoutY="168.0" text="Type" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="AjoutB" layoutX="746.0" layoutY="486.0" mnemonicParsing="false" onAction="#ajouterEvenement" styleClass="btn-dashboard" stylesheets="@style.css" text="Ajouter" />
+      <Label layoutX="446.0" layoutY="206.0" text="Date" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="448.0" layoutY="242.0" text="Adresse" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="adressetf" layoutX="631.0" layoutY="239.0" prefHeight="26.0" prefWidth="312.0" promptText="Adresse de l'évenement" style="-fx-background-color: #FFF;" styleClass="textfield-design" stylesheets="@style.css" />
+      <Label layoutX="450.0" layoutY="278.0" text="Description" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ImageUserr" fitHeight="60.0" fitWidth="60.0" layoutX="1128.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+      <ComboBox fx:id="comboBox" layoutX="631.0" layoutY="166.0" prefHeight="26.0" prefWidth="312.0" promptText="Type de l'évenement" />
+      <DatePicker fx:id="datepicker" layoutX="630.0" layoutY="204.0" prefHeight="26.0" prefWidth="312.0" promptText="Choisir la date de l'évenement" />
+      <TextArea fx:id="descriptiontf" layoutX="634.0" layoutY="284.0" prefHeight="115.0" prefWidth="312.0" promptText="Décrire votre évenement" />
+      <Label layoutX="450.0" layoutY="428.0" text="Image" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="imagetf" layoutX="626.0" layoutY="425.0" prefHeight="26.0" prefWidth="312.0" promptText="Adresse de l'évenement" style="-fx-background-color: #FFF;" styleClass="textfield-design" stylesheets="@style.css" />
+      <Button fx:id="imageB" layoutX="967.0" layoutY="419.0" mnemonicParsing="false" onAction="#chooseImageButton" prefHeight="38.0" prefWidth="122.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Choisir un fichier" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="N1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.ConsultObjCont">
+   <children>
+      <Rectangle id="btn" arcHeight="5.0" arcWidth="5.0" fill="#3f5e6d" height="607.0" layoutX="9.0" layoutY="8.0" stroke="#2f3459" strokeType="INSIDE" width="1501.0" />
+      <TableView fx:id="T1" layoutX="34.0" layoutY="154.0" prefHeight="429.0" prefWidth="722.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="54.39999008178711" resizable="false" text="id" />
+            <TableColumn fx:id="PoidsDes" minWidth="-1.0" prefWidth="105.60000610351562" resizable="false" text="Poids Désiré" />
+            <TableColumn fx:id="TR" prefWidth="119.99998474121094" resizable="false" text="Type Régime" />
+            <TableColumn fx:id="CalCons" prefWidth="117.60003662109375" resizable="false" text="CaloriesConsommé" />
+            <TableColumn fx:id="Age" prefWidth="55.99993896484375" resizable="false" text="Age" />
+            <TableColumn fx:id="Sexe" prefWidth="84.0" resizable="false" text="Sexe" />
+            <TableColumn fx:id="Poids" prefWidth="73.5999755859375" resizable="false" text="Poids" />
+            <TableColumn fx:id="Taille" prefWidth="111.99993896484375" resizable="false" text="Taille" />
+         </columns>
+      </TableView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cda77a" height="48.0" layoutX="10.0" layoutY="55.0" stroke="#3d291d" strokeType="INSIDE" width="1501.0" />
+      <Text fill="#2f3459" layoutX="60.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des Objectifs">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="Supprimer" layoutX="811.0" layoutY="179.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="33.0" prefWidth="101.0" text="Supprimer" />
+      <Button fx:id="Modif" layoutX="811.0" layoutY="241.0" mnemonicParsing="false" onAction="#Transit" prefHeight="33.0" prefWidth="101.0" text="Modifier" />
+      <Button fx:id="Ajout" layoutX="811.0" layoutY="310.0" mnemonicParsing="false" onAction="#Add" prefHeight="33.0" prefWidth="101.0" text="Ajouter" />
+      <Button fx:id="Back" layoutX="811.0" layoutY="375.0" mnemonicParsing="false" onAction="#Back" prefHeight="33.0" prefWidth="101.0" text="Back" />
+      <TextField fx:id="search" layoutX="246.0" layoutY="112.0" onAction="#recherchefiltre" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.ListClientForAdminFXMLController">
+   <children>
+      <Label layoutX="7.0" layoutY="83.0" prefHeight="456.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Button fx:id="gestionClient" layoutX="41.0" layoutY="97.0" mnemonicParsing="false" onAction="#gestClient" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Client">
+         <font>
+            <Font name="Andalus" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="gestionCoach" layoutX="41.0" layoutY="161.0" mnemonicParsing="false" onAction="#gestCoach" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Coach">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="gestionEvent" layoutX="56.0" layoutY="240.0" mnemonicParsing="false" onAction="#gestEvent" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Evenements">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="7.0" layoutY="544.0" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="7.0" layoutY="5.0" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <ImageView fitHeight="121.0" fitWidth="122.0" layoutX="56.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/logo-dark.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="logoutB" layoutX="165.0" layoutY="550.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="43.0" styleClass="btn-logout" stylesheets="@style.css">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/right-from-bracket-solid.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="237.0" layoutY="83.0" prefHeight="456.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="237.0" layoutY="5.0" prefHeight="70.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="237.0" layoutY="544.0" prefHeight="50.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="567.0" layoutY="556.0" text="Copyrights ©2023 Esprit. All rights reserved." textFill="WHITE">
+         <font>
+            <Font name="Andalus" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="listClient" layoutX="243.0" layoutY="146.0" prefHeight="341.0" prefWidth="942.0">
+         <columns>
+            <TableColumn fx:id="Nom" prefWidth="100.80001831054688" style="-fx-alignment: center;" text="Nom" />
+            <TableColumn fx:id="Prenom" prefWidth="101.5999755859375" style="-fx-alignment: center;" text="Prénom" />
+            <TableColumn fx:id="Tel" prefWidth="167.20004272460938" style="-fx-alignment: center;" text="Numéro de téléphone" />
+            <TableColumn fx:id="Email" prefWidth="184.79998779296875" style="-fx-alignment: center;" text="Adresse e-mail" />
+            <TableColumn fx:id="IsVerified" minWidth="0.0" prefWidth="103.199951171875" style="-fx-alignment: center;" text="État d'e-mail" />
+            <TableColumn fx:id="Action" minWidth="0.0" prefWidth="280.0" style="-fx-alignment: center;" text="Action" />
+         </columns>
+      </TableView>
+      <Button fx:id="refreshListClient" layoutX="1127.0" layoutY="492.0" mnemonicParsing="false" onAction="#refreshList" styleClass="btn-logout" stylesheets="@style.css">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/arrows-rotate-solid.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="recherche" layoutX="528.0" layoutY="105.0" prefHeight="27.0" prefWidth="373.0" promptText="Rechercher" styleClass="textfield-design2" stylesheets="@style.css" />
+      <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="21.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/clients.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="21.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/coachs.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1114.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/admin.png" />
+         </image></ImageView>
+      <Text fx:id="NomPrenomUSerr" fill="WHITE" layoutX="915.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailUserr" fill="WHITE" layoutX="915.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+      <Pagination fx:id="table_pagi" layoutX="243.0" layoutY="146.0" prefHeight="383.0" prefWidth="942.0" />
+      <Button fx:id="gestionExercice" layoutX="62.0" layoutY="316.0" mnemonicParsing="false" onAction="#gestExercice" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Exercices">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="academy" layoutX="56.0" layoutY="369.0" mnemonicParsing="false" onAction="#academy" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Academie">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="objectife" layoutX="62.0" layoutY="413.0" mnemonicParsing="false" onAction="#objectife" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Objectif">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="routine" layoutX="62.0" layoutY="457.0" mnemonicParsing="false" onAction="#routine" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Routine">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="categorie" layoutX="62.0" layoutY="278.0" mnemonicParsing="false" onAction="#categorie" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Produit">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

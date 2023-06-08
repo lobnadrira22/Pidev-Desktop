@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.AfficherDetailleProduitController">
+    <children>
+        <Rectangle arcHeight="20.0" arcWidth="20.0" height="420.0" layoutX="65.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="336.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.0075757142269250125">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.4172709584236145" green="0.4631507396697998" blue="0.8105263113975525" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="0.949999988079071" blue="0.9528553485870361" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill></Rectangle>
+        <Label layoutX="101.0" layoutY="183.0" text="idProduit" />
+        <Label fx:id="idproduit" layoutX="226.0" layoutY="183.0" text="Label" textFill="#3f5e6d" />
+        <Label layoutX="99.0" layoutY="277.0" text="DescriptionProduit:" />
+        <Label layoutX="98.0" layoutY="228.0" text="NomProduit:" />
+        <Label fx:id="nomProduit" layoutX="226.0" layoutY="228.0" text="Label" textFill="#3f5e6d" />
+        <Label fx:id="descProduit" layoutX="226.0" layoutY="277.0" text="Label" textFill="#3f5e6d" />
+        <Label layoutX="185.0" layoutY="92.0" prefHeight="27.0" prefWidth="213.0" text="Produit.">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="98.0" layoutY="119.0" prefHeight="47.0" prefWidth="270.0" text=" . . . . . . . . . . . . . . . . .  . . " textFill="#3f5e6d">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <Button layoutX="319.0" layoutY="67.0" mnemonicParsing="false" onAction="#supprimerProduit" text="Supprimer" />
+      <Label layoutX="99.0" layoutY="319.0" text="image" />
+      <Label fx:id="image" layoutX="226.0" layoutY="319.0" text="Label" textFill="#3f5e6d" />
+      <Label layoutX="99.0" layoutY="355.0" text="prix" />
+      <Label fx:id="prix" layoutX="226.0" layoutY="355.0" text="Label" textFill="#3f5e6d" />
+      <Label layoutX="99.0" layoutY="390.0" text="Categorie" />
+      <Label fx:id="categorie" layoutX="226.0" layoutY="390.0" text="Label" textFill="#3f5e6d" />
+    </children>
+</Pane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="card_form" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="230.0" stylesheets="@cardDesign.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.CardacademieControllerFXMLController">
+    <children>
+        <VBox layoutX="65.0" layoutY="-10.0" prefHeight="180.0" prefWidth="230.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <HBox fx:id="snip" alignment="CENTER_LEFT" prefHeight="29.0" prefWidth="230.0">
+                    <children>
+                        <Label fx:id="ac_name" prefHeight="21.0" prefWidth="151.0" text="Spaghetti">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="25.0" />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <AnchorPane fx:id="contenu" prefHeight="101.0" prefWidth="230.0" style="-fx-background-color: #87CEFA;">
+               <children>
+                  <Label fx:id="adresseLabel" layoutX="22.0" layoutY="3.0" prefHeight="21.0" prefWidth="151.0" text="Spaghetti">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numtelLabel" layoutX="22.0" layoutY="25.0" prefHeight="21.0" prefWidth="151.0" text="Spaghetti">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sportproposeLabel" layoutX="22.0" layoutY="47.0" prefHeight="21.0" prefWidth="151.0" text="Spaghetti">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+                </AnchorPane>
+                <HBox fx:id="snip2" alignment="BOTTOM_RIGHT" prefHeight="48.0" prefWidth="230.0">
+               <children>
+                  <Button fx:id="abonne" alignment="BOTTOM_RIGHT" mnemonicParsing="false" prefHeight="32.0" prefWidth="82.0" styleClass="btn" stylesheets="@cardDesign.css" text="S'abonner" />
+               </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+    <styleClass>
+        <String fx:value="card" />
+        <String fx:value="shadow" />
+    </styleClass>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.ProfilCoachFXMLController">
+   <children>
+      <Label layoutX="7.0" layoutY="84.0" prefHeight="456.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Button fx:id="profil" layoutX="41.0" layoutY="98.0" mnemonicParsing="false" onAction="#editProfil" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Profil">
+         <font>
+            <Font name="Andalus" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="7.0" layoutY="545.0" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="7.0" layoutY="6.0" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <ImageView fitHeight="121.0" fitWidth="122.0" layoutX="56.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/logo-dark.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="logoutB" layoutX="165.0" layoutY="551.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="43.0" styleClass="btn-logout" stylesheets="@style.css">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/right-from-bracket-solid.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="237.0" layoutY="84.0" prefHeight="456.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="237.0" layoutY="6.0" prefHeight="70.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="237.0" layoutY="545.0" prefHeight="50.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="567.0" layoutY="557.0" text="Copyrights ©2023 Esprit. All rights reserved." textFill="WHITE">
+         <font>
+            <Font name="Andalus" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NomCo" layoutX="658.0" layoutY="202.0" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: #FFF;" styleClass="textfield-design" stylesheets="@style.css" />
+      <TextField fx:id="TelCo" layoutX="658.0" layoutY="372.0" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: #fff;" styleClass="textfield-design" stylesheets="@style.css" />
+      <TextField fx:id="EmailCo" layoutX="658.0" layoutY="332.0" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: #fff;" styleClass="textfield-design" stylesheets="@style.css" />
+      <TextField fx:id="PrenomCo" layoutX="658.0" layoutY="249.0" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: #FFF;" styleClass="textfield-design" stylesheets="@style.css" />
+      <Label layoutX="474.0" layoutY="204.0" text="Nom" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="251.0" text="Prénom" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="473.0" layoutY="290.0" text="Date de naissance" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="474.0" layoutY="374.0" text="Telephone" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="473.0" layoutY="334.0" text="Email" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="774.0" layoutY="456.0" mnemonicParsing="false" onAction="#modifier" styleClass="btn-dashboard" stylesheets="@style.css" text="Modifier" />
+      <TextField fx:id="DNaissanceCo" layoutX="658.0" layoutY="288.0" prefHeight="26.0" prefWidth="312.0" style="-fx-background-color: #FFF;" styleClass="textfield-design" stylesheets="@style.css" />
+      <Button layoutX="986.0" layoutY="493.0" mnemonicParsing="false" onAction="#EditPassword" styleClass="btn-dashboard" stylesheets="@style.css" text="Modifier mot de passe" />
+      <ImageView fitHeight="26.0" fitWidth="36.0" layoutX="41.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/address-card-solid.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="ImageUserr" fitHeight="60.0" fitWidth="60.0" layoutX="1119.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="NomPrenomUSerr" fill="WHITE" layoutX="920.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailUserr" fill="WHITE" layoutX="920.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="Alim" layoutX="59.0" layoutY="151.0" mnemonicParsing="false" onAction="#aliment" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Alimentation">
+         <font>
+            <Font name="Andalus" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

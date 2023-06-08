@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.ListCoachForAdminFXMLController">
+   <children>
+      <Label layoutX="9.0" layoutY="83.0" prefHeight="456.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Button fx:id="gestionClient" layoutX="43.0" layoutY="97.0" mnemonicParsing="false" onAction="#gestClient" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="GGestion Client">
+         <font>
+            <Font name="Andalus" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="gestionCoach" layoutX="43.0" layoutY="161.0" mnemonicParsing="false" onAction="#gestCoach" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Coach">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="9.0" layoutY="544.0" prefHeight="50.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="9.0" layoutY="5.0" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <ImageView fitHeight="121.0" fitWidth="122.0" layoutX="58.0" layoutY="-18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/logo-dark.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="logoutB" layoutX="167.0" layoutY="550.0" mnemonicParsing="false" onAction="#logout" prefHeight="31.0" prefWidth="43.0" styleClass="btn-logout" stylesheets="@style.css">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/right-from-bracket-solid.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="239.0" layoutY="83.0" prefHeight="456.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="239.0" layoutY="5.0" prefHeight="70.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="239.0" layoutY="544.0" prefHeight="50.0" prefWidth="955.0" style="-fx-background-color: #517ab5;" styleClass="label-dashboard" stylesheets="@style.css" />
+      <Label layoutX="569.0" layoutY="556.0" text="Copyrights ©2023 Esprit. All rights reserved." textFill="WHITE">
+         <font>
+            <Font name="Andalus" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="listCoach" layoutX="245.0" layoutY="145.0" prefHeight="342.0" prefWidth="942.0">
+         <columns>
+            <TableColumn fx:id="Nom" prefWidth="100.80001831054688" style="-fx-alignment: center;" text="Nom" />
+            <TableColumn fx:id="Prenom" prefWidth="101.5999755859375" style="-fx-alignment: center;" text="Prénom" />
+            <TableColumn fx:id="Tel" prefWidth="140.79998779296875" style="-fx-alignment: center;" text="Numéro de téléphone" />
+            <TableColumn fx:id="Email" prefWidth="168.79998779296875" style="-fx-alignment: center;" text="Adresse e-mail" />
+            <TableColumn fx:id="IsVerified" minWidth="0.0" prefWidth="96.79998779296875" style="-fx-alignment: center;" text="État d'e-mail" />
+            <TableColumn fx:id="Ecompte" minWidth="0.0" prefWidth="110.39996337890625" style="-fx-alignment: center;" text="État de compte" />
+            <TableColumn fx:id="Action" minWidth="0.0" prefWidth="219.20001220703125" style="-fx-alignment: center;" text="Action" />
+         </columns>
+      </TableView>
+      <Button fx:id="refreshListClient" layoutX="1129.0" layoutY="492.0" mnemonicParsing="false" onAction="#refreshList" styleClass="btn-logout" stylesheets="@style.css">
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/arrows-rotate-solid.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField fx:id="recherche" layoutX="530.0" layoutY="105.0" prefHeight="27.0" prefWidth="373.0" promptText="Rechercher" styleClass="textfield-design2" stylesheets="@style.css" />
+      <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="23.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/clients.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="23.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/coachs.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="1116.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/admin.png" />
+         </image></ImageView>
+      <Text fx:id="NomPrenomUSerr" fill="WHITE" layoutX="917.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="emailUserr" fill="WHITE" layoutX="917.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="gestionEvent" layoutX="58.0" layoutY="235.0" mnemonicParsing="false" onAction="#gestEvent" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Evenements">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="gestionExercice" layoutX="58.0" layoutY="294.0" mnemonicParsing="false" onAction="#gestExercice" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Exercices">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="gestionCoach1" layoutX="51.0" layoutY="338.0" mnemonicParsing="false" onAction="#academy" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="GestionAcademie">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="objectif" layoutX="51.0" layoutY="382.0" mnemonicParsing="false" onAction="#objectif" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Objectif">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="routine" layoutX="51.0" layoutY="426.0" mnemonicParsing="false" onAction="#routine" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Routine">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="categorie" layoutX="58.0" layoutY="465.0" mnemonicParsing="false" onAction="#categorie" prefHeight="44.0" prefWidth="152.0" styleClass="btn-dashboard" stylesheets="@style.css" text="Gestion Vente">
+         <font>
+            <Font name="Andalus" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

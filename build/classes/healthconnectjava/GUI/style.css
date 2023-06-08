@@ -1,0 +1,71 @@
+.btn-save {
+    -fx-background-color: #2196f3;
+    -fx-font-family: Tahoma;
+    -fx-font-size: 20px;
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 20px
+}
+
+.btn-save:hover {
+    -fx-cursor: hand;
+    -fx-border-color: #2196f3;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #FFF;
+    -fx-text-fill: #2196f3
+}
+
+.textfield-design{
+    -fx-background-color: transparent;
+    -fx-background-radius: 10px;
+    -fx-border-color: #517ab5;
+    -fx-border-radius: 50px;
+    -fx-text-inner-color: #000;
+}
+
+.textfield-design2{
+    -fx-background-color: #FFF;
+    -fx-background-radius: 10px;
+    -fx-border-color: #FFF;
+    -fx-border-radius: 50px;
+    -fx-text-inner-color: #000;
+}
+
+
+.btn-dashboard {
+    -fx-background-color:  #517ab5;
+    -fx-font-family: Andalus;
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 20px
+}
+
+.btn-dashboard:hover {
+    -fx-cursor: hand;
+    -fx-border-color:  #517ab5;
+    -fx-border-width: 2px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #FFF;
+    -fx-text-fill: #000000
+}
+
+.btn-logout {
+    -fx-background-color:  #517ab5;
+    -fx-font-family: Andalus;
+    -fx-font-size: 10px;
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 20px
+}
+
+.btn-logout:hover {
+    -fx-cursor: hand;
+    -fx-border-color:  #FFF;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-color:  #517ab5;
+    -fx-text-fill: #000000
+}
+
+.label-dashboard {
+    -fx-background-radius: 20px
+}

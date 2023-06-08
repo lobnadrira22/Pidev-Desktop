@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.AfficheListCategorieController">
+    <children>
+        <Rectangle id="btn" arcHeight="5.0" arcWidth="5.0" height="607.0" layoutX="-1.0" layoutY="-2.0" stroke="#2f3459" strokeType="INSIDE" width="1501.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.22128655016422272" green="0.30744248628616333" blue="0.34736841917037964" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.027450980618596077" blue="0.26274511218070984" opacity="0.7699999809265137" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+        <TableView fx:id="table" layoutX="24.0" layoutY="144.0" onMouseClicked="#afficher" prefHeight="429.0" prefWidth="901.0">
+            <columns>
+                <TableColumn fx:id="idCategorie" prefWidth="180.0" resizable="false" text="ID" />
+                <TableColumn fx:id="nomCategorie" minWidth="-1.0" prefWidth="180.0" resizable="false" text="Nom" />
+                <TableColumn fx:id="descriptionCategorie" prefWidth="538.4000244140625" resizable="false" text="Description" />
+            </columns>
+        </TableView>
+        <Pane fx:id="detail" layoutX="992.0" layoutY="132.0" prefHeight="444.0" prefWidth="466.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" height="48.0" layoutY="28.0" stroke="#3d291d" strokeType="INSIDE" width="1501.0">
+         <fill>
+            <RadialGradient centerX="0.7411894609224428" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.22128655016422272" green="0.30744248628616333" blue="0.34736841917037964" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.5293020009994507" green="0.6000000238418579" blue="0.5099999904632568" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill></Rectangle>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="108.0" layoutX="1056.0" stroke="BLACK" strokeType="INSIDE" width="124.0" />
+        <Text fill="#2f3459" layoutX="36.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Liste des categories.">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="97.0" fitWidth="116.0" layoutX="1067.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/HealthConnect.png" />
+            </image>
+        </ImageView>
+      <Button layoutX="474.0" layoutY="40.0" mnemonicParsing="false" onAction="#ajouter" styleClass="btn" stylesheets="@cardDesign.css" text="AjouterCategorie" />
+      <Button layoutX="607.0" layoutY="38.0" mnemonicParsing="false" onAction="#modifier" styleClass="btn" stylesheets="@cardDesign.css" text="ModifierCategorie" />
+      <Button layoutX="740.0" layoutY="38.0" mnemonicParsing="false" onAction="#refresh" prefHeight="25.0" prefWidth="69.0" styleClass="btn" stylesheets="@cardDesign.css" text="refresh" />
+      <Button layoutX="832.0" layoutY="38.0" mnemonicParsing="false" onAction="#produit" prefHeight="25.0" prefWidth="112.0" styleClass="btn" stylesheets="@cardDesign.css" text="Produit" />
+    </children>
+</Pane>

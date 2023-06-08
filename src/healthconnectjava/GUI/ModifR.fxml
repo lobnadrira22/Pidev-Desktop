@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.ModifR">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="498.0" prefWidth="504.0" style="-fx-background-color: pink;">
+               <children>
+                  <Pane fx:id="pane" layoutX="25.0" layoutY="-2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="466.0">
+                     <children>
+                        <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#cda77a" height="465.0" layoutX="47.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="336.0" />
+                        <Button fx:id="Button" layoutX="161.0" layoutY="420.0" mnemonicParsing="false" onAction="#update" prefHeight="25.0" prefWidth="68.0" text="Calculer" />
+                        <Label layoutX="56.0" layoutY="73.0" prefHeight="27.0" prefWidth="213.0" text="Modifier Routine" textFill="#3f5e6d">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="53.0" layoutY="86.0" prefHeight="47.0" prefWidth="270.0" text=" . . . . . . . . . . . . . . . . .  . . " textFill="#3f5e6d">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="60.0" layoutY="175.0" text="Dejeuner" textFill="#3f5e6d" />
+                        <Label fx:id="pointErreur" layoutX="239.0" layoutY="341.0" textFill="#ff0707" />
+                        <Label fx:id="descriptionErreur" layoutX="56.0" layoutY="486.0" textFill="#ec0000" />
+                        <Label fx:id="s" layoutX="55.0" layoutY="226.0" prefHeight="17.0" prefWidth="103.0" text="Midi" textFill="#3f5e6d" />
+                        <Label fx:id="s1" layoutX="55.0" layoutY="271.0" prefHeight="17.0" prefWidth="111.0" text="Dinner" textFill="#3f5e6d" />
+                        <Label fx:id="s3" layoutX="57.0" layoutY="354.0" prefHeight="17.0" prefWidth="103.0" text="Objectif" textFill="#3f5e6d" />
+                        <ComboBox fx:id="Midi" layoutX="161.0" layoutY="222.0" onMouseClicked="#wsh1" prefHeight="25.0" prefWidth="103.0" />
+                        <ComboBox fx:id="obj" layoutX="165.0" layoutY="350.0" onMouseClicked="#wsh3" prefHeight="25.0" prefWidth="103.0" />
+                        <ComboBox fx:id="Dejeuner" layoutX="160.0" layoutY="171.0" onMouseClicked="#wsh" prefHeight="25.0" prefWidth="103.0" />
+                        <ComboBox fx:id="Dinner" layoutX="163.0" layoutY="267.0" onMouseClicked="#wsh2" prefHeight="25.0" prefWidth="103.0" />
+                        <Button fx:id="Back" layoutX="264.0" layoutY="57.0" mnemonicParsing="false" onAction="#Back" prefHeight="33.0" prefWidth="101.0" text="Back" />
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

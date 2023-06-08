@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="466.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="healthconnectjava.GUI.ModifierProduitConntroller">
+    <children>
+        <Rectangle arcHeight="20.0" arcWidth="20.0" height="465.0" layoutX="24.0" layoutY="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="336.0">
+            <fill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.17000000178813934" green="0.39846447110176086" blue="0.6800000071525574" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="1.0" green="1.0" blue="1.0" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </fill></Rectangle>
+        <Label layoutX="46.0" layoutY="310.0" text="image" textFill="#3f5e6d" />
+        <Label layoutX="41.0" layoutY="242.0" text="nomProduit" textFill="#3f5e6d" />
+        <Label layoutX="131.0" layoutY="79.0" prefHeight="27.0" prefWidth="213.0" text="Modifier Produit" textFill="#3f5e6d">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="57.0" layoutY="106.0" prefHeight="47.0" prefWidth="270.0" text=" . . . . . . . . . . . . . . . . .  . . " textFill="#3f5e6d">
+            <font>
+                <Font size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="53.0" layoutY="345.0" text="prix" textFill="#3f5e6d" />
+        <Label layoutX="42.0" layoutY="278.0" text="Description" textFill="#3f5e6d" />
+        <ComboBox fx:id="category" layoutX="223.0" layoutY="380.0" prefHeight="25.0" prefWidth="81.0" />
+        <Label layoutX="45.0" layoutY="384.0" text="categorie" textFill="#3f5e6d" />
+        <TextField fx:id="image" layoutX="178.0" layoutY="306.0" />
+        <TextField fx:id="nomProduit" layoutX="178.0" layoutY="238.0" />
+        <TextField fx:id="descProduit" layoutX="178.0" layoutY="274.0" />
+        <TextField fx:id="prix" layoutX="178.0" layoutY="341.0" />
+        <Button layoutX="278.0" layoutY="79.0" mnemonicParsing="false" onAction="#modifier" text="modifier" />
+    </children>
+</Pane>
